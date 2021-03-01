@@ -40,7 +40,7 @@ header .title{
     margin-top: 30px;
     box-shadow: 1px 0 0 grey;
     position: relative;
-    z-index: 9999;
+    z-index: 100;
 }
 
 .row .baloon{
@@ -55,29 +55,10 @@ header .title{
     display: inline-block;
     cursor: pointer;
     margin-right: 20px;
-    margin-top: 30px;
     box-shadow: 1px 0 0 grey;
     position: relative;
     background-color: white;
     z-index: 10;
-}
-
-.row .baloon{
-    height: 200px;
-    width: 160px;
-    border:1px solid grey;
-    border-radius: 10px;
-    background-image: url(../img/noun_air_balloon_3134741.png);
-    background-position: center;
-    background-size: 80%;
-    background-repeat: no-repeat;
-    display: inline-block;
-    cursor: pointer;
-    margin-right: 20px;
-    margin-top: 30px;
-    box-shadow: 1px 0 0 grey;
-    position: relative;
-    background-color: white;
 }
 
 .row .bicycle{
@@ -92,10 +73,10 @@ header .title{
     display: inline-block;
     cursor: pointer;
     margin-right: 20px;
-    margin-top: 30px;
     box-shadow: 1px 0 0 grey;
     position: relative;
     background-color: white;
+    z-index: 10;
 }
 
 .row .cruise{
@@ -110,10 +91,10 @@ header .title{
     display: inline-block;
     cursor: pointer;
     margin-right: 20px;
-    margin-top: 30px;
     box-shadow: 1px 0 0 grey;
     position: relative;
     background-color: white;
+    z-index: 10;
 }
 
 .row .tractor{
@@ -128,10 +109,10 @@ header .title{
     display: inline-block;
     cursor: pointer;
     margin-right: 20px;
-    margin-top: 30px;
     box-shadow: 1px 0 0 grey;
     position: relative;
     background-color: white;
+    z-index: 10;
 }
 
 .row .submarine{
@@ -146,10 +127,10 @@ header .title{
     display: inline-block;
     cursor: pointer;
     margin-right: 20px;
-    margin-top: 30px;
     box-shadow: 1px 0 0 grey;
     position: relative;
     background-color: white;
+    z-index: 10;
 }
 
 .row .tram{
@@ -164,10 +145,10 @@ header .title{
     display: inline-block;
     cursor: pointer;
     margin-right: 20px;
-    margin-top: 30px;
     box-shadow: 1px 0 0 grey;
     position: relative;
     background-color: white;
+    z-index: 10;
 }
 
 .text{
@@ -177,6 +158,10 @@ header .title{
     bottom: 10px;
     left: 15%;
     display: none;
+}
+
+.cardback:hover .baloon,.cardback:hover .bicycle,.cardback:hover .cruise,.cardback:hover .submarine,.cardback:hover .tractor,.cardback:hover .tram{
+    z-index: 200;
 }
 
 .cardback:hover .text{
