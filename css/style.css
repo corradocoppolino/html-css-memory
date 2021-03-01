@@ -54,11 +54,26 @@ header .title{
     background-repeat: no-repeat;
     display: inline-block;
     cursor: pointer;
-    margin-right: 20px;
     box-shadow: 1px 0 0 grey;
     position: relative;
     background-color: white;
-    z-index: 10;
+    display: none;
+}
+
+.row .baloon-visible{
+    height: 200px;
+    width: 160px;
+    border:1px solid grey;
+    border-radius: 10px;
+    background-image: url(../img/noun_air_balloon_3134741.png);
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: 1px 0 0 grey;
+    position: relative;
+    background-color: white;
 }
 
 .row .bicycle{
@@ -72,12 +87,10 @@ header .title{
     background-repeat: no-repeat;
     display: inline-block;
     cursor: pointer;
-    margin-right: 20px;
     box-shadow: 1px 0 0 grey;
     position: relative;
     background-color: white;
-    z-index: 10;
-}
+    display: none;}
 
 .row .cruise{
     height: 200px;
@@ -90,12 +103,10 @@ header .title{
     background-repeat: no-repeat;
     display: inline-block;
     cursor: pointer;
-    margin-right: 20px;
     box-shadow: 1px 0 0 grey;
     position: relative;
     background-color: white;
-    z-index: 10;
-}
+    display: none;}
 
 .row .tractor{
     height: 200px;
@@ -108,12 +119,10 @@ header .title{
     background-repeat: no-repeat;
     display: inline-block;
     cursor: pointer;
-    margin-right: 20px;
     box-shadow: 1px 0 0 grey;
     position: relative;
     background-color: white;
-    z-index: 10;
-}
+    display: none;}
 
 .row .submarine{
     height: 200px;
@@ -126,12 +135,10 @@ header .title{
     background-repeat: no-repeat;
     display: inline-block;
     cursor: pointer;
-    margin-right: 20px;
     box-shadow: 1px 0 0 grey;
     position: relative;
     background-color: white;
-    z-index: 10;
-}
+    display: none;}
 
 .row .tram{
     height: 200px;
@@ -144,12 +151,10 @@ header .title{
     background-repeat: no-repeat;
     display: inline-block;
     cursor: pointer;
-    margin-right: 20px;
     box-shadow: 1px 0 0 grey;
     position: relative;
     background-color: white;
-    z-index: 10;
-}
+    display: none;}
 
 .text{
     position: absolute;
@@ -160,11 +165,19 @@ header .title{
     display: none;
 }
 
-.cardback:hover .baloon,.cardback:hover .bicycle,.cardback:hover .cruise,.cardback:hover .submarine,.cardback:hover .tractor,.cardback:hover .tram{
-    z-index: 200;
+.text-visible{
+    position: absolute;
+    font-size: 25px;
+    color: coral;
+    bottom: 10px;
+    left: 15%;
 }
 
-.cardback:hover .text{
+.cardback:hover .baloon,.cardback:hover .bicycle,.cardback:hover .cruise,.cardback:hover .submarine,.cardback:hover .tractor,.cardback:hover .tram{
+    display: block;
+}
+
+.cardback:hover .text,.cardback:hover .text-visible{
     display: block;
     color: hotpink;
 }
